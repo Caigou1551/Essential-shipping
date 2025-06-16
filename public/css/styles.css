@@ -1,0 +1,420 @@
+/* All CSS styles here */
+
+/*
+border: solid #000;
+border-width: 0 1px;
+*/
+
+.mainNav {
+  background-color: black;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+}
+
+.mainTitle {
+  text-decoration: none;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2%;
+  font-size: x-large;
+}
+
+.mainTitle:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.mainNavLinks {
+  box-sizing: border-box;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.mainLink {
+  margin-right: 2.5vw;
+  text-decoration: none;
+  color: white;
+}
+
+.mainLink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* #region search.handlebars */
+
+html, body {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#primarySearch {
+  margin-top: 30px;
+  width: 100vw;
+  display: flex;
+}
+
+#searchBar {
+  margin-left: 35px;
+  height: 40px;
+  width: 33%;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#searchAmountText {
+  margin-top: auto;
+  margin-left: 20px;
+  margin-bottom: 0;
+  font-size: large;
+  font-style: italic;
+}
+
+#searchAmountNumber {
+  display: inline;
+  font-size: x-large;
+  font-style: normal;
+  font-weight: bold;
+  color: red;
+}
+
+#searchBottomContainer {
+  box-sizing: border-box;
+  margin-top: 30px;
+  width: 100vw;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+#secondarySearch {
+  width: 20%;
+  height: 10px;
+}
+
+#searchResults {
+  width: 70%;
+  height: 10px;
+  margin-left: 5%;
+}
+
+.secondarySearchHeader {
+  font-size: larger;
+}
+
+.searchCategoryButton {
+  font-size: 0.94em;
+  margin-bottom: 3px;
+  border-radius: 18px;
+  border-width: 0;
+  padding: 10px;
+  background-color: rgb(126, 115, 115);
+  color: white;
+}
+
+.searchCategoryButton:hover {
+  background-color: rgb(163, 152, 152);
+  cursor: pointer;
+}
+
+.searchCategoryButtonSelected {
+  background-color: rgb(163, 152, 152);
+}
+
+.miniSearchBar {
+  margin-bottom: 3px;
+}
+
+#searchResultsDefault {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchResultsDefaultTop {
+  font-size: 3.5em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#searchResultsDefaultBottom {
+  font-size: medium;
+  color: grey;
+}
+
+#searchResultsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .searchResultsItem {
+  width: 20%;
+  margin-left: 4%;
+  margin-top: 10px;
+}
+
+.searchResultsItem:hover {
+  cursor: pointer;
+} */
+
+.searchResultsItem {
+  width: 20%;
+  margin-left: 4%;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: ButtonFace;
+  color: black;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-color: black;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.searchResultsItem:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+/* TODO: MAKE THIS WORK WITH SCALE */
+.searchItemImage {
+  width: 60%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.searchItemTitle {
+  font-size: small;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.searchItemInfo {
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.searchItemPrice {
+  font-size: large;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.searchItemStock {
+  font-size: small;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: grey;
+}
+
+/* #endregion */
+
+/* #region login.handlebars */
+
+.credentialsBox {
+  margin-left: 5%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.credentialsHeader {
+  margin: 0;
+  font-size: 5em;
+  font-style: italic;
+}
+
+.credentialsBottom {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: small;
+}
+
+.credentialsContainer {
+  margin-left: 5%;
+  width: 27.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.credentialsLabel {
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.credentialsField {
+  width: 100%;
+  height: 35px;
+  font-size: 1.5em;
+}
+
+.credentialsSubmitHolder {
+  width: auto;
+  margin-top: 25px;
+  display: flex;
+  align-items: end;
+}
+
+.credentialsSubmit {
+  width: 120px;
+  height: 40px;
+  border-width: 0;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.credentialsSubmit:hover {
+  background-color: white;
+  color: black;
+  border-width: 1px;
+  border-color: black;
+  border: solid;
+  cursor: pointer;
+}
+
+.credentialsRedirect {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: large;
+}
+
+#credentialsError {
+  color: red;
+  display: none;
+}
+
+/* #endregion */
+
+/* #region signup.handlebars */
+
+.credentialsMultiContainer {
+  display: flex;
+}
+
+/* #endregion */
+
+/* #region product.handlebars */
+
+#productPrimary {
+  margin: 30px 5% 0 5%;
+  width: auto;
+  display: flex;
+}
+
+#productImage {
+  background-color: black;
+  object-fit: contain;
+  width: 450px;
+  height: 300px;
+  flex-grow: 0;
+}
+
+#productInfo {
+  margin-left: 2.5vw;
+  width: auto;
+  flex-grow: 1;
+}
+
+#productName {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.5em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+#productCategoryBrand {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: medium;
+  font-weight: normal;
+}
+
+#productStoreLocation {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: medium;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#productStock {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.productHR {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#productPrice {
+  display: flex;
+  align-items: center;
+}
+
+#productPriceValue {
+  margin: 0;
+  font-size: 4em;
+  font-style: italic;
+}
+
+#productCartButton {
+  margin-left: 30px;
+  width: 160px;
+  height: 60px;
+  background-color: rgb(0, 189, 0);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-width: 0;
+}
+
+#productCartButton:hover {
+  background-color: white;
+  color: rgb(0, 189, 0);
+  border-width: 3px;
+  border-color: rgb(0, 189, 0);
+  border-style: solid;
+  cursor: pointer;
+}
+
+/* #endregion */
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+<div class="credentialsBox">
+  <h1 class="credentialsHeader">Sign In</h1>
+  <p class="credentialsBottom">What you need, in no time.</p>
+</div>
+
+<form id="credentialsForm" class="credentialsContainer">
+  <label class="credentialsLabel" for="username">Username:</label>
+  <input type="text" class="credentialsField" name="username">
+
+  <label class="credentialsLabel" for="password">Password:</label>
+  <input type="password" class="credentialsField" name="password">
+
+  <div class="credentialsSubmitHolder">
+    <input type="submit" class="credentialsSubmit" value="LOG IN">
+    <a href="/signup" class="credentialsRedirect">or, Sign Up...</a>
+  </div>
+
+  <p id="credentialsError">You shouldn't be seeing this.</p>
+
+  <p>Are you a store? <a href="/store/login">Click here.</a></p>
+</form>
+
+<script src="/public/scripts/login.js"></script>

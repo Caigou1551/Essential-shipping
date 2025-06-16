@@ -1,0 +1,64 @@
+<body>
+  <template id="searchResultsItemTemplate">
+    <a href="" class="searchResultsItem">
+      <img class="searchItemImage" src="">
+      <h1 class="searchItemTitle"></h1>
+      <p class="searchItemInfo"></p>
+      <p class="searchItemPrice"></p>
+      <p class="searchItemStock"></p>
+    </a>
+  </template>
+
+  <section id="primarySearch">
+    <input type="text" id="searchBar" class="searchOption" name="product_name" placeholder="Search...">
+    <div id="searchAmountText" hidden>This query yielded <p id="searchAmountNumber" hidden>You shouldn't be seeing this.</p> results.</div>
+  </section>
+
+  <div id="searchBottomContainer">
+    <section id="secondarySearch">
+      <hr>
+      <div>
+        <h1 class="secondarySearchHeader">By Category</h1>
+        <div>
+          <button class="searchCategoryButton searchOption">Food</button>
+          <button class="searchCategoryButton searchOption">Medical</button>
+          <button class="searchCategoryButton searchOption">Hair Care</button>
+          <button class="searchCategoryButton searchOption">Toiletries</button>
+          <button class="searchCategoryButton searchOption">Dental</button>
+          <button class="searchCategoryButton searchOption">Cleaning</button>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <h1 class="secondarySearchHeader">By Brand</h1>
+        <input type="text" id="searchBrandBar" class="miniSearchBar searchOption" name="brand_name" placeholder="Search...">
+      </div>
+      <hr>
+      <div>
+        <h1 class="secondarySearchHeader">By Store</h1>
+        <input type="text" id="searchStoreBar" class="miniSearchBar searchOption" name="store_name" placeholder="Search...">
+      </div>
+      <hr>
+    </section>
+
+    <section id="searchResults">
+      <hr>
+      <div id="searchResultsDefault">
+        <h1 id="searchResultsDefaultTop">Nothing (yet.)</h1>
+        <h2 id="searchResultsDefaultBottom">Search something to get started...</h2>
+      </div>
+
+      <div id="searchResultsList">
+        {{!-- <a href="/product/1" class="searchResultsItem">
+          <img class="searchItemImage" src="/public/images/no-image.jpg">
+          <h1 class="searchItemTitle">Organic Almond Butter</h1>
+          <p class="searchItemInfo">Food | NutriBlend</p>
+          <p class="searchItemPrice">$9.99</p>
+          <p class="searchItemStock">50 in stock.</p>
+        </a> --}}
+      </div>
+    </section>
+  </div>
+</body>
+
+<script src="/public/scripts/search.js"></script>

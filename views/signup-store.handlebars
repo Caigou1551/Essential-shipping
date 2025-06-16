@@ -1,0 +1,33 @@
+<div class="credentialsBox">
+  <h1 class="credentialsHeader">Create your Store's Account</h1>
+  <p class="credentialsBottom">List your essentials alongside thousands of others.</p>
+</div>
+
+<form id="credentialsForm" class="credentialsMultiContainer">
+  <div class="credentialsContainer">
+    <label class="credentialsLabel" for="store_name">Store Name:</label>
+    <input type="text" class="credentialsField" name="store_name">
+
+    <label class="credentialsLabel" for="location">Store Location:</label>
+    <input type="text" class="credentialsField" name="location">
+
+    <div class="credentialsSubmitHolder">
+      <input type="submit" class="credentialsSubmit" value="SIGN UP">
+      <a href="/store/login" class="credentialsRedirect">or, Log In...</a>
+    </div>
+
+    <p id="credentialsError">You shouldn't be seeing this.</p>
+
+    <p>Are you just a regular user? <a href="/signup">Click here.</a></p>
+  </div>
+
+  <div class="credentialsContainer">
+    <label class="credentialsLabel" for="username">Username:</label>
+    <input type="text" class="credentialsField" name="username">
+
+    <label class="credentialsLabel" for="password">Password:</label>
+    <input type="password" class="credentialsField" name="password">
+  </div>
+</form>
+
+<script src="/public/scripts/signup-store.js"></script>

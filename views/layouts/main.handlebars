@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <script src="https://rawgit.com/leizongmin/js-xss/master/dist/xss.js"></script>
+</head>
+
+<nav class="mainNav">
+  <a class="mainTitle" href="/">Essentials.com</a>
+
+  <div class="mainNavLinks">
+    <a class="mainLink" href="/home">Home</a>
+    {{#if user}}
+    <a class="mainLink" href="/profile">My Profile</a>
+    <a class="mainLink" href="/signout">Sign Out</a>
+    {{else}}
+    {{#if store}}
+    <a class="mainLink" href="/store/profile">My Profile</a>
+    <a class="mainLink" href="/store/upload">Upload Products</a>
+    <a class="mainLink" href="/store/signout">Sign Out</a>
+    {{else}}
+    <a class="mainLink" href="/login">Login</a>
+    <a class="mainLink" href="/signup">Register</a>
+    {{/if}}
+    {{/if}}
+    <a class="mainLink" href="/search">Search</a>
+  </div>
+</nav>
+
+{{{body}}}
+
+{{#unless searchPage}}
+<footer class="footer">
+  <div class="footer-links">
+    <a href="/">Home</a> |
+    {{#if user}}
+    <a href="/profile">User Dashboard</a> |
+    <a href="/signout">Sign Out</a> |
+    {{else}}
+    {{#if store}}
+    <a href="/store/profile">Store Dashboard</a> |
+    <a href="/store/upload">Upload Products</a> |
+    <a href="/store/signout">Sign Out</a> |
+    {{else}}
+    <a href="/login">Login</a> |
+    <a href="/signup">Register</a> |
+    {{/if}}
+    {{/if}}
+    <a href="/search">Search</a>
+  </div>
+</footer>
+{{/unless}}
+
+</html>

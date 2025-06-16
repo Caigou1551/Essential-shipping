@@ -1,0 +1,27 @@
+{
+  "name": "essential-shipping-service",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "schema": "node --trace-uncaught ./tasks/schema.js",
+    "seed": "node --trace-uncaught ./tasks/seed.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js -- --testPathPattern ./tasks/tests"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.1",
+    "jest": "^29.7.0",
+    "pg": "^8.14.1"
+  },
+  "jest": {
+    "transform": {}
+  }
+}

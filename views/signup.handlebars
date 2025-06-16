@@ -1,0 +1,40 @@
+<body>
+  <div class="credentialsBox">
+    <h1 class="credentialsHeader">Create an Account</h1>
+    <p class="credentialsBottom">Get access to thousands of products immediately.</p>
+  </div>
+
+  <form id="credentialsForm" class="credentialsMultiContainer">
+    <div class="credentialsContainer">
+      <label class="credentialsLabel" for="first_name">First Name:</label>
+      <input type="text" class="credentialsField" name="first_name">
+
+      <label class="credentialsLabel" for="last_name">Last Name:</label>
+      <input type="text" class="credentialsField" name="last_name">
+
+      <label class="credentialsLabel" for="cc_info">Credit Card Info:</label>
+      <input type="text" class="credentialsField" name="cc_info" placeholder="(optional)">
+
+      <label class="credentialsLabel" for="shipping_address">Shipping Address:</label>
+      <input type="text" class="credentialsField" name="shipping_address" placeholder="(optional)">
+    </div>
+
+    <div class="credentialsContainer">
+      <label class="credentialsLabel" for="username">Username:</label>
+      <input type="text" class="credentialsField" name="username">
+
+      <label class="credentialsLabel" for="password">Password:</label>
+      <input type="password" class="credentialsField" name="password">
+
+      <div class="credentialsSubmitHolder">
+        <input type="submit" class="credentialsSubmit" value="SIGN UP">
+        <a href="/login" class="credentialsRedirect">or, Log In...</a>
+      </div>
+
+      <p id="credentialsError">You shouldn't be seeing this.</p>
+
+      <p>Are you a store? <a href="/store/signup">Click here.</a></p>
+    </div>
+  </form>
+</body>
+<script src="/public/scripts/signup.js"></script>
